@@ -2,10 +2,22 @@ const { createApp } = Vue;
 
 createApp({
   data() {
-    return {};
+    return {
+      apiUrl: "server.php",
+      todoList: [],
+    };
   },
 
-  methods: {},
+  methods: {
+    readList() {
+      axios.get(this.apiUrl).then((res) => {
+        console.log(res.data[0].text);
+        this.todoList = res.data;
+      });
+    },
+  },
 
-  mounted() {},
+  mounted() {
+    this.readList();
+  },
 }).mount("#app");

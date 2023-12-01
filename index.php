@@ -17,10 +17,24 @@
 </head>
 
 <body>
+
     <div id="app">
 
-    </div>
+        <div class="container">
 
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item" v-for="(task, index) in todoList" :key="index">{{ task.text }}</li>
+            </ul>
+
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="New task" aria-label="Recipient's username"
+                    aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="addTask">Add</button>
+            </div>
+
+        </div>
+
+    </div>
 
 </body>
 

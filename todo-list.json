@@ -1,17 +1,1 @@
-[
-    {
-        "text" : "prova",
-        "done" : false,
-        "id" : 1
-    },
-    {
-        "text" : "prova",
-        "done" : false,
-        "id" : 2
-    },
-    {
-        "text" : "prova",
-        "done" : false,
-        "id" : 3
-    }
-]
+[{"text":"prova 1","done":"false"},{"text":"prova 2","done":"false"},{"text":"prova 3","done":"false"}]

@@ -28,8 +28,8 @@
 
             <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="New task" aria-label="Recipient's username"
-                    aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary" type="button" id="addTask">Add</button>
+                    aria-describedby="button-addon2" v-model="newTask">
+                <button class="btn btn-outline-secondary" type="button" id="addTask" @click="addTask">Add</button>
             </div>
 
         </div>
